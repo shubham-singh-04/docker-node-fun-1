@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: naming-things-web
+    container_name: 'naming-things-web'
+    ports:
+      - 8000:8000
+    volumes:
+      - ./app/naming-things-is-hard:/usr/app
+      - /usr/app/node_modules
