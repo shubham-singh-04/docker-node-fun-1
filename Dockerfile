@@ -1,5 +1,5 @@
 # Base image
-FROM node:10.15.0
+FROM node:14.21.3-bullseye-slim
 
 # Set up a workspace
 WORKDIR /usr/app
